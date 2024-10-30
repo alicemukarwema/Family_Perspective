@@ -2,132 +2,211 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <title>Family Perspectives</title>
-    <h1>Family Perspective</h1>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Perspective</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 <style>
-    body{
-        background-color: rgb(255, 255, 255);
+    /* Reset some default styles */
+    body, h1, ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        background-color: #93c3d3; /* Light background */
+        color: white; /* White text */
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-links li {
         position: relative;
-        top: 8%;
-        margin-left: 50%;
-        margin-right: -15%;
-        transform: translate(-50%, -50%)
-
+        margin-left: 20px;
     }
-    
-    .search-input{
-        width:auto; 
-        padding:10px;
-        margin:1px;
-        border-radius: 10px;
-        border: 1px;
-        font-size: 12px;
 
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
     }
-    .button-home {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
 
-        .button-home:hover {
-            background-color: #45a049; /* Change background on hover */
+    .nav-links a:hover {
+        color: #f39c12; /* Change color on hover */
     }
-    .button-about {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+
+    /* Dropdown menu */
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%; /* Positions dropdown below the parent */
+        left: 0;
+        background-color: #1fdbdb;
+        padding: 10px;
+        list-style: none;
+        min-width: 150px;
+        box-shadow: 0 4px 8px rgba(20, 204, 204, 0.1);
+    }
+
+    .dropdown-menu li {
+        margin: 5px 0;
+    }
+
+    .dropdown-menu a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 5px 10px;
+    }
+
+    /* Show dropdown menu on hover */
+    .nav-links li:hover .dropdown-menu {
+        display: block;
+    }
+
+    /* Styling for search icon */
+    .search-icon {
+        font-size: 18px;
+        color: white;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            flex-direction: column;
+            position: absolute;
+            background-color: #17796e;
+        
+            top: 60px; /* Adjust according to your layout */
+            right: 0;
+            display: none; /* Hidden by default */
+            width: 100%;
         }
 
-        .button-about:hover {
-            background-color: #45a049; /* Change background on hover */
-            }
-            .button-contact {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        nav.active .nav-links {
+            display: flex; /* Show on active */
         }
 
-        .button-contact:hover {
-            background-color: #45a049; /* Change background on hover */
-            }
-            .button-pod {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        .nav-links li {
+            margin: 10px 0;
         }
-
-        .button-pod:hover {
-            background-color: #45a049; /* Change background on hover */
-            }
-            .button-help {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;    
-        }
-
-        .button-help:hover {
-            background-color: #45a049; /* Change background on hover */
-            }
-            .button-resources {
-                padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }    
-
-        .button-resources:hover {
-            background-color: #45a049; /* Change background on hover */ 
-            }
-            .button-comment {
-                padding: 10px 20px;
-            font-size: 16px;    
-            background-color: #4CAF50;
-            color: white;    
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }    
-
-        .button-comment:hover { 
-            background-color: #45a049; /* Change background on hover */
-                
-            }
-            
+    }
 </style>
+
+</head>
 <body>
-    <input type="button" value="Home page" class="button-home">
-    <input type="button" value="about us"class="button-about">
-    <input type="button" value="contact us" class="button-contact">
-    <input type="button" value="pod casts" class="button-pod">
-    <input type="button" value="How can we help you" class="button-help">
-    <input type="button" value="Resources" class="button-resources">
-    <input type="button" value="Comment section" class="button-comment">
-    <input type="text" name="query" class="search-input" placeholder="Search here...">
+    <nav>
+        <div class="container">
+            <h1 class="logo">Family Perspective</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li>
+                    <a href="#how-help">How Can We Help You</a>
+                    
+                    <ul class="dropdown-menu">
+                        <li><a href="#parents">Parents</a></li>
+                        <li><a href="#marriage">Marriage</a></li>
+                        <li><a href="#relationships">Relationships</a></li>
+                        <li><a href="#couples">Couples</a></li>
+                    </ul>
+                </li>
+                <li><a href="#podcast">Podcast</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#comments">Comments</a></li>
+                <li><a href="#search" class="search-icon"><i class="fas fa-search"></i></a></li>
+            </ul>
+            
+            </div>            
+        </div>
+    </nav>
+    <style>
+        .chat-box {
+    width: 300px;
+    height: 20px;
+    position: fixed;
+    right: 20px;
+    top:auto;
+    border:2px; 
+    border-radius: 10px;
+    display:flex;
+    flex-direction:column;
+    background-color:#f9f9f9;
+    box-shadow:0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #e0e0e0;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.chat-input button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #555;
+}
+
+    </style>
+    <div class="chat-box">
+        <div class="chat-header">
+            <h3>Chat with Us</h3>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type a message..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    
+    
 </body>
 </html>
