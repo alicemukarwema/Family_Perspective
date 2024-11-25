@@ -9,7 +9,7 @@ body, h1, ul {
         nav {
             background-color: #0e2c2a;
             color: #0e2c2a;
-            padding: 10px 20px;
+            padding: 4px 4px;
             position: fixed;
             width: 100%;
             top: 0;
@@ -66,13 +66,13 @@ body, h1, ul {
             background-color: #0e2c2a;
             padding: 10px 0;
             list-style: none;
-            min-width: 200px;
+            min-width: 100px;
             box-shadow: 0 4px 8px rgba(20, 204, 204, 0.2);
             border-radius: 5px;
         }
 
         .dropdown-menu li {
-            width: 100%;
+            width: 200px;
             position: relative;
         }
 
@@ -80,7 +80,7 @@ body, h1, ul {
             color: white;
             padding: 10px 20px;
             display: block;
-            width: 100%;
+            width: 150px;
         }
 
         /* Show dropdown on hover */
