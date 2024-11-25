@@ -312,7 +312,7 @@ h1 {
     flex-wrap: wrap;
 }
 .card {
-    background-color: #fff;
+    background-color: #a5dcec;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -340,11 +340,11 @@ h1 {
     margin-bottom: 10px;
 }
 .card-content a {
-    color: white;
+    color: rgb(22, 8, 131);
     text-decoration: none;
-    font-weight: lighter;
     margin-top: 10px;
 }
 .card-content a:hover {
     text-decoration: underline;
+    color: #f39c12;
 }
