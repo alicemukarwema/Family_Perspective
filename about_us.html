@@ -5,18 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
     <a href="About-us.html">About Us</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+            rel="stylesheet"
+    />
     <link rel="stylesheet" href="Styles.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+    />
     <style>
       /* Add some CSS here for styling */
       body {
         font-family: Arial, sans-serif;
-        line-height: height 0.6em;
+        /*line-height: 2.6em;*/
         margin: 5%;
         padding: 0;
         background-color: #f4f4f9;
         color: #333;
       }
-      .about-us {
+      .About-us {
         max-width: 800px;
         margin: 50px auto;
         padding: 20px;
@@ -58,101 +78,102 @@
     </style>
   </head>
   <body>
-    <nav>
-      <div class="nav-container">
-        <h1 class="logo">Family Perspective</h1>
-        <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
-        <ul class="nav-links">
-          <li><a href="family_perspectives.html">Home</a></li>
-          <li><a href="About_us.html">About Us</a></li>
-          <li>
-            <a href="#how-help">How Can We Help You</a>
-            <ul class="dropdown-menu">
-              <li><a href="parenting.html">Parenting</a></li>
-              <li><a href="marriedCouples.html">Married Couples</a></li>
-              <li><a href="relationships.html">Relationships</a></li>
-              <li><a href="couples.html">Couples</a></li>
-            </ul>
-          </li>
-          <li><a href="#podcast">Podcast</a></li>
-          <li>
-            <a href="#resources">Resources</a>
-            <ul class="dropdown-menu">
-              <!-- Books dropdown -->
-              <li>
-                <a href="#books">Books</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#effective-parenting"
-                      >Effective Parenting Strategies</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#marriage-communication"
-                      >Marriage and Communication</a
-                    >
-                  </li>
-                </ul>
-              </li>
+  <nav>
+    <div class="nav-container">
+      <h1 class="logo">Family Perspective</h1>
+      <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+      <ul class="nav-links">
+        <li><a href="family_perspectives.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
 
-              <!-- Articles dropdown -->
-              <li>
-                <a href="#articles">Articles</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#building-marriages">Building Strong Marriages</a>
-                  </li>
-                  <li>
-                    <a href="#family-environment"
-                      >The Role of Family Environment</a
-                    >
-                  </li>
-                </ul>
-              </li>
 
-              <!-- PDFs dropdown -->
-              <li>
-                <a href="#pdfs">PDFs</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#family-dynamics">Family Dynamics Guide</a></li>
-                  <li>
-                    <a href="#parenting-years">Parenting Through the Years</a>
-                  </li>
-                </ul>
-              </li>
+        <li>
+          <a href="#resources">Resources</a>
+          <ul class="dropdown-menu">
+            <!-- Books dropdown -->
+            <li>
+              <a href="#books">Books</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#effective-parenting"
+                  >Effective Parenting Strategies</a
+                  >
+                </li>
+                <li>
+                  <a href="#marriage-communication"
+                  >Marriage and Communication</a
+                  >
+                </li>
+              </ul>
+            </li>
 
-              <!-- Readings dropdown -->
-              <li>
-                <a href="#readings">Readings</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="#child-development">Child Development Basics</a>
-                  </li>
-                  <li>
-                    <a href="#science-relationships"
-                      >The Science of Relationships</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="search-icon" onclick="toggleSearchBar()"
-              ><i class="fas fa-search"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-      <div class="search-bar" id="searchBar">
-        <input
-          type="text"
-          placeholder="Search resources..."
-          oninput="searchResources()"
-        />
-        <ul id="searchResults"></ul>
-      </div>
-    </nav>
+            <!-- Articles dropdown -->
+            <li>
+              <a href="#articles">Articles</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#building-marriages">Building Strong Marriages</a>
+                </li>
+                <li>
+                  <a href="#family-environment"
+                  >The Role of Family Environment</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- PDFs dropdown -->
+            <li>
+              <a href="#pdfs">PDFs</a>
+              <ul class="dropdown-menu">
+                <li><a href="#family-dynamics">Family Dynamics Guide</a></li>
+                <li>
+                  <a href="#parenting-years">Parenting Through the Years</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Readings dropdown -->
+            <li>
+              <a href="#readings">Readings</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#child-development">Child Development Basics</a>
+                </li>
+                <li>
+                  <a href="#science-relationships"
+                  >The Science of Relationships</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#how-help">How Can We Help You</a>
+          <ul class="dropdown-menu">
+            <li><a href="parenting.html">Parenting</a></li>
+            <li><a href="marriedCouples.html">Married Couples</a></li>
+            <li><a href="relationships.html">Relationships</a></li>
+            <li><a href="couples.html">Couples</a></li>
+          </ul>
+        </li>
+        <li><a href="#podcast">Podcast</a></li>
+        <li>
+          <a href="#" class="search-icon" onclick="toggleSearchBar()"
+          ><i class="fas fa-search"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="search-bar" id="searchBar">
+      <input
+              type="text"
+              placeholder="Search resources..."
+              oninput="searchResources()"
+      />
+      <ul id="searchResults"></ul>
+    </div>
+  </nav>
 
     <div class="About-us">
       <h1>About Us</h1>
