@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern family book resource webpage">
+    <title>Family Book Resources</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="books.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+    />
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+          <h1 class="logo">Family Perspective</h1>
+          <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+          <ul class="nav-links">
+            <li><a href="family_perspectives.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li>
+              <a href="#resources">Resources</a>
+              <ul class="dropdown-menu">
+                <li><a href="books.html">Books</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#pdfs">PDFs</a></li>
+                <li><a href="#readings">Readings</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#how-help">How Can We Help You</a>
+              <ul class="dropdown-menu">
+                <li><a href="parenting.html">Parenting</a></li>
+                <li><a href="marriedCouples.html">Married Couples</a></li>
+                <li><a href="relationships.html">Relationships</a></li>
+                <li><a href="couples.html">Couples</a></li>
+              </ul>
+            </li>
+            <li><a href="#podcast">Podcast</a></li>
+            <li>
+              <a href="#" class="search-icon" onclick="toggleSearchBar()"
+                ><i class="fas fa-search"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar" id="searchBar">
+          <input
+            type="text"
+            placeholder="Search resources..."
+            oninput="searchResources()"
+          />
+          <ul id="searchResults"></ul>
+        </div>
+      </nav>
+
+<!-- Hero Section -->
+<section id="heros">
+    <div class="heros-content">
+        <h1>Explore the Best Books for Your Family</h1>
+        <p>Discover a wide range of books for every stage of family life, from parenting tips to relationship advice.</p>
+        <button onclick="scrollToCategories()">Explore Categories</button>
+    </div>
+</section>
+
+<!-- Book Categories -->
+<section id="categories" class="section">
+    <h2>Explore Book Categories</h2>
+    <div class="categories-grid">
+        <div class="category">
+            <h3>Parenting</h3>
+            <p>Books to guide you through the joys and challenges of raising children.</p>
+            <button onclick="showCategory('parenting-books')">Explore</button>
+        </div>
+        <div class="category">
+            <h3>Couples</h3>
+            <p>Relationship books for couples looking to strengthen their bond.</p>
+            <button onclick="showCategory('couples-books')">Explore</button>
+        </div>
+        <div class="category">
+            <h3>Married Couples</h3>
+            <p>Books that offer advice for keeping your marriage strong and fulfilling.</p>
+            <button onclick="showCategory('married-couples-books')">Explore</button>
+        </div>
+        <div class="category">
+            <h3>Relationships</h3>
+            <p>Books on building healthy, lasting relationships in all areas of life.</p>
+            <button onclick="showCategory('relationships-books')">Explore</button>
+        </div>
+    </div>
+</section>
+
+<!-- Parenting Books Section -->
+<section id="parenting-books" class="book-section">
+    <h2>Parenting Books</h2>
+    <div class="book-list">
+        <div class="book">
+
+            <h3>The 5 Love Languages of Children</h3>
+            <p>Discover how to speak the five love languages to your child.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+
+            <h3>Positive Discipline</h3>
+            <p>A guide to raising respectful, responsible children without resorting to punishment.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+
+            <h3>How to Talk So Kids Will Listen & Listen So Kids Will Talk</h3>
+            <p>Effective communication strategies to improve relationships with your kids.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+            <img src="images/IMGE.JPG" alt="Raising An Emotionally Intelligent Child">
+            <h3>Raising An Emotionally Intelligent Child</h3>
+            <p>Practical guidance for helping your child develop emotional intelligence.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+            <img src="images/IMGA.JPG" alt="The Whole-Brain Child">
+            <h3>The Whole-Brain Child</h3>
+            <p>Brain-based strategies for raising calm, happy, and resilient children.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+            <img src="images/IMGG.JPG" alt="No-Drama Discipline">
+            <h3>No-Drama Discipline</h3>
+            <p>Effective techniques to discipline children without drama or stress.</p>
+            <a href="#">Read</a>
+        </div>
+    </div>
+</section>
+
+<!-- Couples Books Section -->
+<section id="couples-books" class="book-section">
+    <h2>Couples Books</h2>
+    <div class="book-list">
+        <div class="book">
+            <img src="images/IMGD.jpg" alt="The 7 Principles for Making Marriage Work">
+            <h3>The 7 Principles for Making Marriage Work</h3>
+            <p>Scientifically proven strategies to create a lasting and fulfilling relationship.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+            <img src="images/IMG_5.jpg" alt="Men Are from Mars, Women Are from Venus">
+            <h3>Men Are from Mars, Women Are from Venus</h3>
+            <p>Understanding the differences between men and women to improve communication and intimacy.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+            <img src="images/IMGF.jpg" alt="Hold Me Tight">
+            <h3>Hold Me Tight</h3>
+            <p>For couples seeking a deeper emotional connection through seven conversations.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+
+            <h3>Attached</h3>
+            <p>Explore the science of attachment theory and how it impacts your romantic relationships.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+
+            <h3>The Love Dare</h3>
+            <p>A 40-day challenge to rekindle and deepen your relationship with your partner.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+
+            <h3>The 5 Love Languages</h3>
+            <p>Understand how to give and receive love in a way that strengthens your relationship.</p>
+            <a href="#">Read</a>
+        </div>
+    </div>
+</section>
+
+<!-- Married Couples Books Section -->
+<section id="married-couples-books" class="book-section">
+    <h2>Married Couples Books</h2>
+    <div class="book-list">
+        <div class="book">
+
+            <h3>The Meaning of Marriage</h3>
+            <p>A deep dive into the meaning and purpose of marriage through a Christian perspective.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+
+            <h3>The Marriage Builder</h3>
+            <p>A blueprint for building a lasting marriage, focusing on understanding and mutual respect.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+
+            <h3>Sacred Marriage</h3>
+            <p>Learn how marriage can help you grow closer to God and strengthen your relationship.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+            <img src="images/IMG_2.jpg" alt="Love and Respect">
+            <h3>Love and Respect</h3>
+            <p>How to build a loving and respectful relationship with your spouse through mutual understanding.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+            <img src="images/IMG_1.jpg" alt="The 5 Love Languages of Marriage">
+            <h3>The 5 Love Languages of Marriage</h3>
+            <p>Understanding how to speak your spouse's love language to strengthen your marriage.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+            <img src="images/IMG_4.jpg" alt="Before You Say I Do">
+            <h3>Before You Say I Do</h3>
+            <p>Pre-marital advice for building a strong foundation for a lifetime together.</p>
+            <a href="#">Read</a>
+        </div>
+    </div>
+</section>
+
+<!-- Relationships Books Section -->
+<section id="relationships-books" class="book-section">
+    <h2>Relationships Books</h2>
+    <div class="book-list">
+        <div class="book">
+            <img src="images/IMG_6.jpg" alt="The Relationship Cure">
+            <h3>The Relationship Cure</h3>
+            <p>Strengthen your relationships with practical, research-backed advice.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+            <img src="images/IMG_11.jpg" alt="Getting the Love You Want">
+            <h3>Getting the Love You Want</h3>
+            <p>Transform your relationship and find deeper emotional connection with your partner.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+            <img src="images/IMG_10.jpg" alt="The Art of Loving">
+            <h3>The Art of Loving</h3>
+            <p>Understand the concept of love and how to apply it in relationships.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+            <h3>The 5 Love Languages of Friendship</h3>
+            <p>Apply the principles of love languages to deepen your friendships.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+            <h3>Love Languages for Men</h3>
+            <p>Understanding how men experience and express love in relationships.</p>
+            <a href="#">Read</a>
+        </div>
+        <div class="book">
+            <h3>The Psychology of Relationships</h3>
+            <p>Learn the psychological principles behind building healthy, lasting relationships.</p>
+            <a href="#">Read</a>
+        </div>
+    </div>
+</section>
+<!--Footer Section-->
+<footer>
+    <div class="footer-left">
+      <p>Contact Us</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="Website"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#comments">Comments</a>
+    </div>
+    <div class="footer-links">
+      <a href="#testimonials">Newsletter Sign-up</a>
+      <a href="#faqs">Community Forum</a>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        Copyright © 2024. All rights reserved |
+        <a
+          href="#privacy-policy"
+          style="color: #f9c000; text-decoration: none"
+          >Privacy Policy</a
+        >
+      </p>
+    </div>
+  </footer>
+<script src="books.js"></script>
+</body>
+</html>
