@@ -49,155 +49,6 @@
             padding: 40px 20px;
         }
 
-         /* Navbar container */
-         nav {
-            background-color: #0e2c2a;
-            color: white;
-            padding: 10px 20px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        /* Navbar branding/logo */
-        .logo {
-            font-size: 1.5rem;
-            font-family: "Manrope", sans-serif;
-            color: white;
-        }
-
-        /* Navbar links container */
-        .nav-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* Links and menu */
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-            font-family: "Manrope", sans-serif;
-        }
-
-        .nav-links li {
-            position: relative;
-        }
-
-        /* Links styling */
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-            padding: 8px 12px;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #f39c12;
-        }
-
-        /* Dropdown menu */
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #0e2c2a;
-            padding: 10px 0;
-            list-style: none;
-            min-width: 200px;
-            box-shadow: 0 4px 8px rgba(20, 204, 204, 0.2);
-            border-radius: 5px;
-        }
-
-        .dropdown-menu li {
-            width: 100%;
-            position: relative;
-        }
-
-        .dropdown-menu a {
-            color: white;
-            padding: 10px 20px;
-            display: block;
-            width: 100%;
-        }
-
-        /* Show dropdown on hover */
-        .nav-links li:hover > .dropdown-menu {
-            display: block;
-        }
-
-        /* Nested dropdown menus */
-        .dropdown-menu .dropdown-menu {
-            left: 100%;
-            top: 0;
-            background-color: #0e2c2a;
-            min-width: 180px;
-        }
-
-        /* Search icon styling */
-        .search-icon {
-            font-size: 1.2rem;
-            cursor: pointer;
-            color: white;
-        }
-
-        /* Search bar */
-        .search-bar {
-            display: none;
-            position: absolute;
-            right: 10px;
-            top: 60px;
-            width: 250px;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .search-bar input {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        /* Mobile menu button */
-        .menu-toggle {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: white;
-        }
-
-        /* Mobile responsive */
-        @media (max-width: 768px) {
-            .nav-links {
-                flex-direction: column;
-                display: none;
-                position: fixed;
-                top: 60px;
-                right: 0;
-                width: 100%;
-                background-color: #0e2c2a;
-                padding: 20px;
-                gap: 20px;
-            }
-
-            nav.active .nav-links {
-                display: flex;
-            }
-
-            .menu-toggle {
-                display: block;
-            }
-        }
-
         .content-2 {
             max-width: 800px;
             margin: 20px auto;
@@ -209,7 +60,7 @@
             margin-top: 20px;
             color: black;
         }
-        p {
+        .content-2 p {
             margin-bottom: 15px;
             color: black;
         }
@@ -218,161 +69,44 @@
             border-radius: 8px;
             margin: 20px 0;
         }
-        footer {
-            background: #0e2c2a;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-        footer {
-    background-color: black;
-    color: #F9C000;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.footer-left {
-    max-width: 300px;
-    
-}
-.footer-left p {
-    margin-left: 50px;
-    margin-bottom: 50px;
-    font-size: 16px;
-}
-.social-icons {
-    margin-top: 10px;
-}
-.social-icons a {
-    margin: 0 10px;
-    color: #F9C000;
-    text-decoration: none;
-    font-size: 24px;
-}
-.footer-links {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: 16px;
-}
-.footer-links a {
-    color: #F9C000;
-    text-decoration: none;
-}
-.footer-links a:hover {
-    text-decoration: underline;
-}
-.footer-bottom {
-    text-align: center;
-    font-size: 14px;
-    color: #F9C000;
-    border-top: 1px solid #F9C000;
-    margin-top: 20px;
-    padding-top: 10px;
-    background-color: black;
-}
     </style>
 </head>
 <body>
-    /* The Nav Bar */
 
-    <nav>
-        <div class="nav-container">
-          <h1 class="logo">Family Perspective</h1>
-          <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about_us.html">About Us</a></li>
-            <li>
-              <a href="#how-help">How Can We Help You</a>
+  <!-- Navigation Section -->
+<nav class="navbar">
+  <div class="containerr">
+      <h1 class="logo">Family Perspective</h1>
+      <!-- Menu toggle (visible only on small screens) -->
+      <div class="menu-toggle" id="menu-toggle">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </div>
+      <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li class="dropdown">
+              <a href="javascript:void(0)">Resources</a>
               <ul class="dropdown-menu">
-                <li><a href="parenting.html">Parenting</a></li>
-                <li><a href="marriedCouples.html">Married Couples</a></li>
-                <li><a href="relationships.html">Relationships</a></li>
-                <li><a href="couples.html">Couples</a></li>
+                  <li><a href="books.html">Books</a></li>
+                  <li><a href="#articles">Articles</a></li>
+                  <li><a href="#pdfs">PDFs</a></li>
               </ul>
-            </li>
-            <li><a href="#podcast">Podcast</a></li>
-            <li>
-              <a href="#resources">Resources</a>
+          </li>
+          <li class="dropdown">
+              <a href="javascript:void(0)">How Can We Help You</a>
               <ul class="dropdown-menu">
-                <!-- Books dropdown -->
-                <li>
-                  <a href="books.html">Books</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#effective-parenting"
-                        >Effective Parenting Strategies</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#marriage-communication"
-                        >Marriage and Communication</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-  
-                <!-- Articles dropdown -->
-                <li>
-                  <a href="#articles">Articles</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#building-marriages">Building Strong Marriages</a>
-                    </li>
-                    <li>
-                      <a href="#family-environment"
-                        >The Role of Family Environment</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-  
-                <!-- PDFs dropdown -->
-                <li>
-                  <a href="#pdfs">PDFs</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#family-dynamics">Family Dynamics Guide</a></li>
-                    <li>
-                      <a href="#parenting-years">Parenting Through the Years</a>
-                    </li>
-                  </ul>
-                </li>
-  
-                <!-- Readings dropdown -->
-                <li>
-                  <a href="#readings">Readings</a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#child-development">Child Development Basics</a>
-                    </li>
-                    <li>
-                      <a href="#science-relationships"
-                        >The Science of Relationships</a
-                      >
-                    </li>
-                  </ul>
-                </li>
+                  <li><a href="parenting.html">Parenting</a></li>
+                  <li><a href="marriedCouples.html">Married Couples</a></li>
+                  <li><a href="relationships.html">Relationships</a></li>
+                  <li><a href="couples.html">Couples</a></li>
               </ul>
-            </li>
-            <li>
-              <a href="#" class="search-icon" onclick="toggleSearchBar()"
-                ><i class="fas fa-search"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="search-bar" id="searchBar">
-          <input
-            type="text"
-            placeholder="Search resources..."
-            oninput="searchResources()"
-          />
-          <ul id="searchResults"></ul>
-        </div>
-      </nav>
+          </li>
+          <li><a href="#podcast">PodCast</a></li>
+      </ul>
+  </div>
+</nav>
 
     <div class="hero">
         <h1>Married Couples Resources</h1>
@@ -393,29 +127,39 @@
         <p>Every marriage encounters conflicts, but handling them constructively makes a significant difference. Effective conflict management involves avoiding blame, focusing on the issue rather than personal attacks, and finding mutually agreeable solutions. Couples can strengthen their relationship by treating conflicts as opportunities for growth.</p>
     </div>
 
-    <!--Footer Section-->  
-    <footer>
-        <div class="footer-left">
-            <p>Contact Us</p>
-            <div class="social-icons">
-                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>                
-                <a href="#" aria-label="Website"><i class="bi bi-youtube"></i></a>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@familyperspective.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#faqs">FAQs</a>
+                <a href="#comments">Comments</a>
+            </div>
+            <div class="footer-column">
+                <h3>Stay Connected</h3>
+                <a href="#newsletter">Newsletter Sign-up</a>
+                <a href="#forum">Community Forum</a>
             </div>
         </div>
-        <div class="footer-links">
-            <a href="#testimonials">Testimonials</a>
-            <a href="#faqs">FAQs</a>
-            <a href="#comments">Comments</a> 
-        </div>
-        <div class="footer-links">
-            <a href="#testimonials">Newsletter Sign-up</a>
-            <a href="#faqs">Community Forum</a>
-        </div>
         <div class="footer-bottom">
-            <p>Copyright © 2024. All rights reserved | <a href="#privacy-policy" style="color: #F9C000; text-decoration: none;">Privacy Policy</a></p>
+            <p>
+                © 2024 Family Perspective | All rights reserved |
+                <a href="#privacy-policy">Privacy Policy</a>
+            </p>
         </div>
-    </footer>
+      </footer>
+      <script defer src="index.js"></script>
 </body>
 </html>
