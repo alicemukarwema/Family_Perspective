@@ -27,15 +27,15 @@ body, h1, ul {
 
 .logo {
     color: #f9c000;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
-    font-size: x-large;
+    gap: 2rem;
+    font-size: large;
 }
 
 .nav-links a {
@@ -66,13 +66,13 @@ body, h1, ul {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         transition: all 0.3s ease-in-out; /* Smooth transitions */
         z-index: 100;
-        justify-content: center;
+        justify-content: end;
     }
 
     .dropdown-menu li {
         margin: 0;
         display: flex;
-        justify-content: center;
+        justify-content: center; 
     }
 
     .dropdown-menu li a {
