@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Perspective PDF Readings Resource Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Styles.css" />
+    <link rel="stylesheet" href="pdf.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+    />
+</head>
+<body>
+<!-- Navigation Section -->
+<nav class="navbar">
+    <div class="containerr">
+        <h1 class="logo">Family Perspective</h1>
+        <!-- Menu toggle (visible only on small screens) -->
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)">Resources</a>
+                <ul class="dropdown-menu">
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="#pdfs">PDFs</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)">How Can We Help You</a>
+                <ul class="dropdown-menu">
+                    <li><a href="parenting.html">Parenting</a></li>
+                    <li><a href="marriedCouples.html">Married Couples</a></li>
+                    <li><a href="relationships.html">Relationships</a></li>
+                    <li><a href="couples.html">Couples</a></li>
+                </ul>
+            </li>
+            <li><a href="#podcast">PodCast</a></li>
+        </ul>
+    </div>
+  </nav>
+  
+<header>
+    <div class="header-content">
+        <h1>Family Perspective Resource Center</h1>
+        <p class="intro-text">Welcome to a treasure trove of resources designed to support couples, parents, and individuals on their journey to healthy, thriving relationships. Dive into the materials below and start building a stronger foundation for your family and personal growth.</p>
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search for PDF resources..." onkeyup="searchPDFs()">
+        </div>
+    </div>
+</header>
+<main>
+    <div class="categories-container">
+        <div class="category">
+            <h2>Couples</h2>
+            <ul class="pdf-list" id="couples">
+                <li><a href="path/to/couples1.pdf" target="_blank">Couples Communication - PDF</a></li>
+                <li><a href="path/to/couples2.pdf" target="_blank">Building Trust in Couples - PDF</a></li>
+                <li><a href="path/to/couples3.pdf" target="_blank">Relationship Goals - PDF</a></li>
+                <li><a href="path/to/couples4.pdf" target="_blank">Managing Conflict - PDF</a></li>
+                <li><a href="path/to/couples5.pdf" target="_blank">Love Languages in Couples - PDF</a></li>
+                <li><a href="path/to/couples6.pdf" target="_blank">Effective Communication - PDF</a></li>
+                <li><a href="path/to/couples7.pdf" target="_blank">Understanding Emotional Needs - PDF</a></li>
+                <li><a href="path/to/couples8.pdf" target="_blank">Building Intimacy - PDF</a></li>
+                <li><a href="path/to/couples9.pdf" target="_blank">Finances in Marriage - PDF</a></li>
+                <li><a href="path/to/couples10.pdf" target="_blank">Strengthening Your Bond - PDF</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <h2>Parenting</h2>
+            <ul class="pdf-list" id="parenting">
+                <li><a href="path/to/parenting1.pdf" target="_blank">Parenting with Patience - PDF</a></li>
+                <li><a href="path/to/parenting2.pdf" target="_blank">Effective Discipline - PDF</a></li>
+                <li><a href="path/to/parenting3.pdf" target="_blank">Positive Reinforcement - PDF</a></li>
+                <li><a href="path/to/parenting4.pdf" target="_blank">Balancing Work and Family - PDF</a></li>
+                <li><a href="path/to/parenting5.pdf" target="_blank">Raising Confident Children - PDF</a></li>
+                <li><a href="path/to/parenting6.pdf" target="_blank">Setting Boundaries - PDF</a></li>
+                <li><a href="path/to/parenting7.pdf" target="_blank">Parenting Strategies for Teens - PDF</a></li>
+                <li><a href="path/to/parenting8.pdf" target="_blank">Understanding Child Development - PDF</a></li>
+                <li><a href="path/to/parenting9.pdf" target="_blank">Parenting and Self-Care - PDF</a></li>
+                <li><a href="path/to/parenting10.pdf" target="_blank">Building Emotional Intelligence in Kids - PDF</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <h2>Married Couples</h2>
+            <ul class="pdf-list" id="married">
+                <li><a href="path/to/married1.pdf" target="_blank">Strengthening Marriage - PDF</a></li>
+                <li><a href="path/to/married2.pdf" target="_blank">Romantic Connection in Marriage - PDF</a></li>
+                <li><a href="path/to/married3.pdf" target="_blank">Building a Lasting Partnership - PDF</a></li>
+                <li><a href="path/to/married4.pdf" target="_blank">Maintaining Respect - PDF</a></li>
+                <li><a href="path/to/married5.pdf" target="_blank">Handling Disagreements - PDF</a></li>
+                <li><a href="path/to/married6.pdf" target="_blank">Sexual Intimacy in Marriage - PDF</a></li>
+                <li><a href="path/to/married7.pdf" target="_blank">Spiritual Connection in Marriage - PDF</a></li>
+                <li><a href="path/to/married8.pdf" target="_blank">Marriage and Finances - PDF</a></li>
+                <li><a href="path/to/married9.pdf" target="_blank">Quality Time Together - PDF</a></li>
+                <li><a href="path/to/married10.pdf" target="_blank">Rekindling Romance - PDF</a></li>
+            </ul>
+        </div>
+        <div class="category">
+            <h2>Relationships</h2>
+            <ul class="pdf-list" id="relationships">
+                <li><a href="path/to/relationships1.pdf" target="_blank">Healthy Relationship Habits - PDF</a></li>
+                <li><a href="path/to/relationships2.pdf" target="_blank">Conflict Resolution - PDF</a></li>
+                <li><a href="path/to/relationships3.pdf" target="_blank">Trust Building - PDF</a></li>
+                <li><a href="path/to/relationships4.pdf" target="_blank">Effective Communication in Relationships - PDF</a></li>
+                <li><a href="path/to/relationships5.pdf" target="_blank">Setting Boundaries in Relationships - PDF</a></li>
+                <li><a href="path/to/relationships6.pdf" target="_blank">Healthy Dating Tips - PDF</a></li>
+                <li><a href="path/to/relationships7.pdf" target="_blank">Dealing with Breakups - PDF</a></li>
+                <li><a href="path/to/relationships8.pdf" target="_blank">Forgiveness in Relationships - PDF</a></li>
+                <li><a href="path/to/relationships9.pdf" target="_blank">Long-Distance Relationship Tips - PDF</a></li>
+                <li><a href="path/to/relationships10.pdf" target="_blank">Building Emotional Intimacy - PDF</a></li>
+            </ul>
+        </div>
+    </div>
+</main>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@familyperspective.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#faqs">FAQs</a>
+                <a href="#comments">Comments</a>
+            </div>
+            <div class="footer-column">
+                <h3>Stay Connected</h3>
+                <a href="#newsletter">Newsletter Sign-up</a>
+                <a href="#forum">Community Forum</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2024 Family Perspective | All rights reserved |
+                <a href="#privacy-policy">Privacy Policy</a>
+            </p>
+        </div>
+      </footer>
+      <script defer src="index.js"></script>
+      <script defer src="pdf.js"></script>
+</body>
+</html>

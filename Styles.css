@@ -26,7 +26,7 @@ body, h1, ul {
 }
 
 .logo {
-    color: #f9c000;
+    color: #e6a243;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -46,7 +46,7 @@ body, h1, ul {
 }
 
 .nav-links a:hover {
-    color: #f9c000;
+    color: #e6a243;
 }
 
 /* Dropdown Menu - Improved Design */
@@ -86,7 +86,7 @@ body, h1, ul {
     }
 
     .dropdown-menu li a:hover {
-        background-color: #f9c000; /* Highlight effect */
+        background-color: #e6a243; /* Highlight effect */
         color: #00332e;
     }
 
@@ -248,7 +248,7 @@ body, h1, ul {
     }
 
     .footer-column h3 {
-        color: #f9c000;
+        color: #e6a243;
         margin-bottom: 1rem;
     }
 
@@ -260,7 +260,7 @@ body, h1, ul {
     }
 
     .footer-column a:hover {
-        color: #f9c000;
+        color: #e6a243;
     }
 
     .footer-bottom {
@@ -269,7 +269,7 @@ body, h1, ul {
     }
 
     .footer-bottom a {
-        color: #f9c000;
+        color: #e6a243;
         text-decoration: none;
     }
 
@@ -351,5 +351,5 @@ h1 {
 }
 .card-content a:hover {
     text-decoration: underline;
-    color: #f39c12;
+    color: #e6a243;
 }
