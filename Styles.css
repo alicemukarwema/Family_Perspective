@@ -3,6 +3,8 @@ body, h1, ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.6;
 }
 
 /* Navbar */
@@ -15,12 +17,12 @@ body, h1, ul {
     z-index: 1000;
 }
 
-.container {
+.containerr {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 
 .logo {
@@ -33,6 +35,7 @@ body, h1, ul {
     display: flex;
     list-style: none;
     gap: 1.5rem;
+    font-size: x-large;
 }
 
 .nav-links a {
