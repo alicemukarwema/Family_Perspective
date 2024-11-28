@@ -12,15 +12,24 @@ body {
     line-height: 1.6;
 }
 
-h1, h2 {
+h2 {
     text-align: center;
-    color: white;
+    color: #e6a243;
+}
+.header-content h1 {
+    color: #0e2c2a;
+    background-color: #e6a243;
 }
 
-p {
+.header-content p {
     text-align: center;
-    color: #ccc;
+    color: #e6a243;
     margin-bottom: 1rem;
+    background-color: #1a4846;
+    border-radius: 6px;
+    padding: 4px;
+    margin-top: 8px;
+    font-size: small;
 }
 
 a {
