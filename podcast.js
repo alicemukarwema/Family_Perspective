@@ -1,7 +1,7 @@
-// Function to show the selected section and hide others
-function showSection(sectionId) {
+// Function to show the selected podcast section and hide others
+function showPodcastSection(sectionId) {
     // Hide all sections
-    const sections = document.querySelectorAll('.contente-section');
+    const sections = document.querySelectorAll('.podcast-section');
     sections.forEach(section => section.classList.remove('active'));
 
     // Show the selected section
@@ -11,7 +11,7 @@ function showSection(sectionId) {
     }
 }
 
-// By default, show the "Couples" section when the page loads
+// By default, show the "Latest Episodes" section when the page loads
 document.addEventListener('DOMContentLoaded', () => {
-    showSection('couples');
+    showPodcastSection('newEpisodes');
 });

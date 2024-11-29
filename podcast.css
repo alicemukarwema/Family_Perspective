@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation */
+header {
+    background-color: rgba(14, 44, 42, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.podcast-nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+.podcast-nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.podcast-nav-links li {
+    margin: 0 30px;
+}
+
+.podcast-nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.podcast-nav-links a:hover {
+    color: #e6a243;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+/* Podcast Content Container */
+.podcast-content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Podcast Sections */
+.podcast-section {
+    display: none;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.podcast-section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.podcast-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Coming Soon Section */
+.coming-soon-message {
+    background-color: rgba(14, 44, 42, 0.85);
+    color: #fff;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.podcast-coming-image {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 30px auto;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+/* Active Section */
+.active {
+    display: block;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .podcast-nav-links {
+        flex-direction: column;
+    }
+
+    .podcast-nav-links li {
+        margin: 10px 0;
+    }
+
+    .podcast-section {
+        padding: 30px 15px;
+    }
+
+    .coming-soon-message {
+        font-size: 1.2rem;
+    }
+
+    .podcast-coming-image {
+        width: 100%;
+    }
+}
+
