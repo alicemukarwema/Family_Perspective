@@ -18,7 +18,7 @@ h2 {
 }
 .header-content h1 {
     color: #0e2c2a;
-    background-color: #e6a243;
+    background-color: rgba(230, 162, 67, 0.8);
 }
 
 .header-content p {

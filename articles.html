@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Perspective PDF Readings Resource Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Styles.css" />
+    <link rel="stylesheet" href="articles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+    />
+</head>
+<body>
+<!-- Navigation Section -->
+<nav class="navbar">
+    <div class="containerr">
+        <h1 class="logo">Family Perspective</h1>
+        <!-- Menu toggle (visible only on small screens) -->
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)">Resources</a>
+                <ul class="dropdown-menu">
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="#articles">Articles</a></li>
+                    <li><a href="pdf.html">PDFs</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)">How Can We Help You</a>
+                <ul class="dropdown-menu">
+                    <li><a href="parenting.html">Parenting</a></li>
+                    <li><a href="marriedCouples.html">Married Couples</a></li>
+                    <li><a href="relationships.html">Relationships</a></li>
+                    <li><a href="couples.html">Couples</a></li>
+                </ul>
+            </li>
+            <li><a href="#podcast">PodCast</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div class="nav-containere">
+        <ul class="nav-linkss">
+            <li><a href="#" onclick="showSection('couples')">Couples</a></li>
+            <li><a href="#" onclick="showSection('relationships')">Relationships</a></li>
+            <li><a href="#" onclick="showSection('marriedCouples')">Married Couples</a></li>
+            <li><a href="#" onclick="showSection('parenting')">Parenting</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="contente-containere">
+        <div id="couples" class="contente-section">
+            <h1>Couples</h1>
+            <p>Articles in this section will explore the dynamics of being in a relationship as a couple. Whether you're dating or engaged, we'll discuss challenges and tips for maintaining a strong connection.</p>
+            <div class="coming-soon">Articles Coming Soon!</div>
+            <img src="images/IMG_5996.JPG" alt="Coming Soon" class="coming-soon-image">
+        </div>
+        <div id="relationships" class="contente-section">
+            <h1>Relationships</h1>
+            <p>This section focuses on the broader aspects of relationships—friendships, family bonds, and romantic connections. We'll share insights on how to build healthy, lasting relationships.</p>
+            <div class="coming-soon">Articles Coming Soon!</div>
+            <img src="images/IMG_5994.JPG" alt="Coming Soon" class="coming-soon-image">
+        </div>
+        <div id="marriedCouples" class="contente-section">
+            <h1>Married Couples</h1>
+            <p>In this section, we’ll delve into the complexities and joys of marriage, including communication, compromise, and balancing responsibilities. Get ready for practical advice on navigating married life.</p>
+            <div class="coming-soon">Articles Coming Soon!</div>
+            <img src="images/IMG_5998.JPG" alt="Coming Soon" class="coming-soon-image">
+        </div>
+        <div id="parenting" class="contente-section">
+            <h1>Parenting</h1>
+            <p>The Parenting section will focus on raising children, from newborns to teenagers. Expect expert tips, heartwarming stories, and advice for parents looking to navigate the rewarding, yet challenging, world of parenting.</p>
+            <div class="coming-soon">Articles Coming Soon!</div>
+            <img src="images/IMG_5994.JPG" alt="Coming Soon" class="coming-soon-image">
+        </div>
+    </div>
+</main>
+
+  <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@familyperspective.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#faqs">FAQs</a>
+                <a href="#comments">Comments</a>
+            </div>
+            <div class="footer-column">
+                <h3>Stay Connected</h3>
+                <a href="#newsletter">Newsletter Sign-up</a>
+                <a href="#forum">Community Forum</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2024 Family Perspective | All rights reserved |
+                <a href="#privacy-policy">Privacy Policy</a>
+            </p>
+        </div>
+      </footer>
+      <script defer src="index.js"></script>
+      <script defer src="articles.js"></script>
+</body>
+</html>
+
